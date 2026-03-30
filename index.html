@@ -14,17 +14,17 @@ body { font-family: 'Outfit', sans-serif; background:#0a0a0f; color:#e4e0d9; }
 .card { background:#13131a; border-radius:16px; padding:20px; transition:.3s; }
 .card:hover { transform:translateY(-5px); }
 .skill { background:#1a1a22; padding:8px 14px; border-radius:999px; font-size:13px; }
-ul { padding-left:20px; }
 </style>
 </head>
 
 <body>
 
 <!-- NAV -->
-<nav class="flex justify-between p-6 fixed w-full bg-black/70 backdrop-blur z-50">
+<nav class="flex justify-between items-center p-6 fixed w-full bg-black/70 backdrop-blur z-50">
 <h1 class="font-semibold">Harvey S. Balmes</h1>
 <div class="space-x-6 text-sm">
 <a href="#work">Projects</a>
+<a href="#gallery">Gallery</a>
 <a href="#designs">Designs</a>
 <a href="#about">About</a>
 <a href="#certs">Certifications</a>
@@ -35,151 +35,115 @@ ul { padding-left:20px; }
 <!-- HERO -->
 <section class="section pt-32 grid md:grid-cols-2 gap-10 items-center">
 
-<!-- LEFT SIDE (TEXT) -->
 <div>
-  <h1 class="text-5xl font-bold mb-4">Harvey S. Balmes</h1>
+<h1 class="text-5xl font-bold mb-4">Harvey S. Balmes</h1>
 
-  <p class="text-xl text-gray-400 mb-4">
-  IT Professional | Web Developer | IoT & Network Specialist
-  </p>
+<p class="text-xl text-gray-400 mb-4">
+IT Professional | Web Developer | IoT & Network Specialist
+</p>
 
-  <p class="text-gray-500 max-w-xl">
-  An IT professional based in Batangas City specializing in IoT systems, network setup, web development, and technical support. Passionate about building smart solutions and automation systems that improve efficiency.
-  </p>
+<p class="text-gray-500 mb-6">
+An IT professional based in Batangas City specializing in IoT systems, network setup, web development, and technical support.
+</p>
+
+<div class="flex gap-4">
+<a href="#work" class="bg-lime-300 text-black px-5 py-2 rounded-full font-semibold">
+View Projects
+</a>
+
+<a href="#contact" class="border border-gray-700 px-5 py-2 rounded-full text-gray-300">
+Contact Me
+</a>
 </div>
 
-<!-- RIGHT SIDE (IMAGE) -->
+</div>
+
 <div class="flex justify-center md:justify-end">
-  <img src="images/profile.png"
-       class="w-72 h-72 object-cover rounded-2xl shadow-lg border border-gray-800">
+<img src="images/profile.png"
+class="w-72 h-72 object-cover rounded-full border-4 border-lime-300 shadow-[0_0_40px_rgba(201,255,87,0.3)]">
 </div>
 
 </section>
-  
 
+<!-- GALLERY -->
+<section id="gallery" class="section">
+<h2 class="text-3xl font-bold mb-10">Project Gallery</h2>
 
 <div class="grid md:grid-cols-3 gap-6">
 
 <div>
-<img src="images/sample1.jpg" onclick="openLightbox(this.src)" class="rounded-lg cursor-pointer">
+<img src="images/sample1.jpg" onclick="openLightbox(this.src)" class="rounded-lg cursor-pointer hover:scale-105 transition">
 <p class="text-sm text-gray-400 mt-2">Tarpaulin Design</p>
 </div>
 
 <div>
-<img src="images/sample2.jpg" onclick="openLightbox(this.src)" class="rounded-lg cursor-pointer">
+<img src="images/sample2.jpg" onclick="openLightbox(this.src)" class="rounded-lg cursor-pointer hover:scale-105 transition">
 <p class="text-sm text-gray-400 mt-2">IoT Monitoring System</p>
 </div>
 
 <div>
-<img src="images/sample3.jpg" onclick="openLightbox(this.src)" class="rounded-lg cursor-pointer">
+<img src="images/sample3.jpg" onclick="openLightbox(this.src)" class="rounded-lg cursor-pointer hover:scale-105 transition">
 <p class="text-sm text-gray-400 mt-2">CCTV Installation</p>
 </div>
 
 <div>
-<img src="images/sample4.jpg" onclick="openLightbox(this.src)" class="rounded-lg cursor-pointer">
-<p class="text-sm text-gray-400 mt-2">Printing Layout Design</p>
+<img src="images/sample4.jpg" onclick="openLightbox(this.src)" class="rounded-lg cursor-pointer hover:scale-105 transition">
+<p class="text-sm text-gray-400 mt-2">Printing Layout</p>
 </div>
 
 <div>
-<img src="images/sample5.jpg" onclick="openLightbox(this.src)" class="rounded-lg cursor-pointer">
+<img src="images/sample5.jpg" onclick="openLightbox(this.src)" class="rounded-lg cursor-pointer hover:scale-105 transition">
 <p class="text-sm text-gray-400 mt-2">Website Project</p>
 </div>
 
 <div>
-<img src="images/sample6.jpg" onclick="openLightbox(this.src)" class="rounded-lg cursor-pointer">
+<img src="images/sample6.jpg" onclick="openLightbox(this.src)" class="rounded-lg cursor-pointer hover:scale-105 transition">
 <p class="text-sm text-gray-400 mt-2">Network Setup</p>
-</div>
-
-</div>
-
-
-<!-- PROJECTS -->
-<section id="work" class="section">
-<h2 class="text-3xl font-bold mb-10">ICT / Technical Projects</h2>
-
-<div class="grid md:grid-cols-2 gap-6">
-
-<div class="card">
-<h3 class="font-semibold text-lg">IoT Server Room Monitoring System</h3>
-<ul class="text-gray-400 text-sm mt-2">
-<li>Real-time temperature & humidity monitoring</li>
-<li>ESP32 + Blynk integration</li>
-<li>Automated fan control</li>
-<li>Google Sheets data logging</li>
-</ul>
-</div>
-
-<div class="card">
-<h3 class="font-semibold text-lg">SDN OMADA Network Setup</h3>
-<ul class="text-gray-400 text-sm mt-2">
-<li>Configured Access Points & Switches</li>
-<li>LAN/WAN and Wireless setup</li>
-<li>Centralized network control</li>
-</ul>
-</div>
-
-<div class="card">
-<h3 class="font-semibold text-lg">Computer Shop / Pisonet / Pisowifi</h3>
-<ul class="text-gray-400 text-sm mt-2">
-<li>Built multiple computer units</li>
-<li>Configured VLAN and Raspberry Pi</li>
-<li>Automation: auto shutdown & announcements</li>
-</ul>
-</div>
-
-<div class="card">
-<h3 class="font-semibold text-lg">Printing Business Website</h3>
-<ul class="text-gray-400 text-sm mt-2">
-<li>Business information website</li>
-<li>Portfolio gallery</li>
-<li>Inquiry system + chatbot</li>
-</ul>
-</div>
-
-<div class="card">
-<h3 class="font-semibold text-lg">Automation Tools</h3>
-<ul class="text-gray-400 text-sm mt-2">
-<li>Kiosk viewer (PDF, images, media)</li>
-<li>EXE automation tools</li>
-<li>Printer sharing automation</li>
-</ul>
-</div>
-
-<div class="card">
-<h3 class="font-semibold text-lg">CCTV Installation</h3>
-<ul class="text-gray-400 text-sm mt-2">
-<li>Installed CCTV systems</li>
-<li>Configured remote access</li>
-<li>Security system setup</li>
-</ul>
 </div>
 
 </div>
 </section>
 
-<!-- GRAPHIC DESIGN -->
-<section id="designs" class="section">
-<h2 class="text-3xl font-bold mb-6">Graphic & Layout Designs</h2>
+<!-- PROJECTS -->
+<section id="work" class="section">
+<h2 class="text-3xl font-bold mb-10">Technical Projects</h2>
 
-<div class="card mb-6">
-<h3 class="font-semibold text-lg">Tarpaulin & Layout Design</h3>
-<ul class="text-gray-400 text-sm mt-2">
-<li>Designed tarpaulins, posters, and print materials</li>
-<li>Layouts for business, school, and events</li>
-<li>Tools: Adobe Photoshop, MS Office</li>
-<li>Owner of mini Digital Printing business</li>
-</ul>
+<div class="grid md:grid-cols-2 gap-6">
+
+<div class="card">
+<h3 class="font-semibold">IoT Server Room Monitoring</h3>
+<p class="text-gray-400 text-sm mt-2">ESP32 + Blynk + automated fan control + Google Sheets logging</p>
 </div>
 
 <div class="card">
-<h3 class="font-semibold text-lg">Multimedia Editing</h3>
-<ul class="text-gray-400 text-sm mt-2">
-<li>Basic photo & video editing</li>
-<li>Marketing visuals creation</li>
-<li>Image enhancement</li>
-</ul>
+<h3 class="font-semibold">OMADA Network Setup</h3>
+<p class="text-gray-400 text-sm mt-2">Configured LAN/WAN, switches, access points</p>
 </div>
 
+<div class="card">
+<h3 class="font-semibold">Pisonet & Pisowifi System</h3>
+<p class="text-gray-400 text-sm mt-2">VLAN + Raspberry Pi + automation features</p>
+</div>
+
+<div class="card">
+<h3 class="font-semibold">Printing Website</h3>
+<p class="text-gray-400 text-sm mt-2">Business site with portfolio and chatbot</p>
+</div>
+
+</div>
+</section>
+
+<!-- DESIGNS -->
+<section id="designs" class="section">
+<h2 class="text-3xl font-bold mb-6">Graphic & Layout Designs</h2>
+
+<div class="card mb-4">
+Tarpaulin, posters, and business layouts using Photoshop
+</div>
+
+<div class="card">
+Photo & video editing for promotional materials
+</div>
 </section>
 
 <!-- ABOUT -->
@@ -187,104 +151,72 @@ ul { padding-left:20px; }
 <h2 class="text-3xl font-bold mb-6">About Me</h2>
 
 <p class="text-gray-400 mb-6">
-I am an IT professional with strong experience in system development, network configuration, and technical support. I specialize in IoT-based systems, web development, and ICT infrastructure.
-</p>
-
-<p class="text-gray-500 mb-6">
-I also manage a digital printing business, combining technical expertise with creative design skills to deliver complete digital and physical solutions.
+Experienced IT professional specializing in IoT, networking, and system development. Also managing a digital printing business.
 </p>
 
 <div class="flex flex-wrap gap-3">
 <span class="skill">Web Development</span>
-<span class="skill">PHP & MySQL</span>
-<span class="skill">IoT (ESP32)</span>
+<span class="skill">PHP</span>
+<span class="skill">IoT</span>
 <span class="skill">Networking</span>
-<span class="skill">SDN OMADA</span>
-<span class="skill">CCTV Installation</span>
-<span class="skill">Troubleshooting</span>
-<span class="skill">Graphic Design</span>
-<span class="skill">Technical Documentation</span>
+<span class="skill">CCTV</span>
+<span class="skill">Photoshop</span>
 </div>
-</section>
-
-<!-- DOCUMENTATION -->
-<section class="section">
-<h2 class="text-3xl font-bold mb-6">Technical Documentation</h2>
-
-<ul class="text-gray-400">
-<li>Created ICT system documentation and reports</li>
-<li>Prepared monitoring and implementation reports</li>
-<li>Planned preventive maintenance for ICT equipment</li>
-<li>Managed inventory and system records</li>
-</ul>
 </section>
 
 <!-- CERTIFICATIONS -->
 <section id="certs" class="section">
-<h2 class="text-3xl font-bold mb-6">Certifications & Trainings</h2>
+<h2 class="text-3xl font-bold mb-6">Certifications</h2>
 
 <ul class="text-gray-400">
-<li>Installation and Setup of Sundray SDN & Peplink Server Configuration (2025)</li>
-<li>Seminar on Smart Parking Barrier (2026)</li>
-<li>NC II – Computer System Servicing (2018)</li>
-<li>ICT Skills Competition – 1st Place</li>
-<li>Assembling/Disassembling Competition – 1st Place</li>
-</ul>
-</section>
-
-<!-- CONTRIBUTIONS -->
-<section class="section">
-<h2 class="text-3xl font-bold mb-6">Key Contributions</h2>
-
-<ul class="text-gray-400">
-<li>Developed IoT-based monitoring system</li>
-<li>Provided university ICT technical support</li>
-<li>Delivered freelance IT services</li>
-<li>Designed digital & print materials</li>
-<li>Supported project planning & implementation</li>
+<li>NC II – Computer System Servicing</li>
+<li>Sundray SDN & Peplink Training</li>
+<li>Smart Parking Barrier Seminar</li>
+<li>ICT Competition – 1st Place</li>
 </ul>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section">
-<h2 class="text-3xl font-bold mb-4">Contact</h2>
-
-<p class="text-gray-400 mb-6">
-Open for IT projects, freelance work, and collaborations.
-</p>
+<section id="contact" class="section text-center">
+<h2 class="text-3xl font-bold mb-6">Contact</h2>
 
 <a href="mailto:harveybalmes01@gmail.com"
 class="bg-lime-300 text-black px-6 py-3 rounded-full font-semibold">
-harveybalmes01@gmail.com
+Email Me
 </a>
 
-<p class="mt-6 text-gray-500 text-sm">
-📞 0927-631-6196 / 0991-397-8450<br>
+<p class="mt-6 text-gray-500">
+📞 0927-631-6196<br>
 Batangas City, Philippines
 </p>
 </section>
 
-
 <!-- LIGHTBOX -->
-<div id="lightbox" 
-class="fixed inset-0 bg-black/90 hidden justify-center items-center z-50">
-
+<div id="lightbox" class="fixed inset-0 bg-black/90 hidden justify-center items-center z-50">
 <img id="lightbox-img" class="max-w-[90%] max-h-[90%] rounded-lg">
-
 </div>
 
 <script>
 function openLightbox(src){
-  document.getElementById("lightbox").classList.remove("hidden");
-  document.getElementById("lightbox").classList.add("flex");
-  document.getElementById("lightbox-img").src = src;
+document.getElementById("lightbox").classList.remove("hidden");
+document.getElementById("lightbox").classList.add("flex");
+document.getElementById("lightbox-img").src = src;
 }
 
-document.getElementById("lightbox").addEventListener("click", function(){
-  this.classList.add("hidden");
+document.getElementById("lightbox").onclick = () => {
+document.getElementById("lightbox").classList.add("hidden");
+}
+
+// smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+e.preventDefault();
+document.querySelector(this.getAttribute('href')).scrollIntoView({
+behavior: 'smooth'
+});
+});
 });
 </script>
-
 
 </body>
 </html>
