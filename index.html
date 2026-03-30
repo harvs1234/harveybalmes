@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harvey Balmes Portfolio</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body { font-family: 'Outfit', sans-serif; background:#0a0a0f; color:#e4e0d9; }
+.section { padding:80px 20px; max-width:1100px; margin:auto; }
+.card { background:#13131a; border-radius:16px; padding:20px; transition:.3s; }
+.card:hover { transform:translateY(-5px); }
+.skill { background:#1a1a22; padding:8px 14px; border-radius:999px; }
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav class="flex justify-between p-6 fixed w-full bg-black/70 backdrop-blur">
+<h1 class="font-semibold">Harvey S. Balmes</h1>
+<div class="space-x-6 text-sm">
+<a href="#work">Work</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="section pt-32">
+<h1 class="text-5xl font-bold mb-4">Harvey S. Balmes</h1>
+<p class="text-xl text-gray-400 mb-4">
+IT Professional | Web Developer | IoT & Network Specialist
+</p>
+<p class="text-gray-500 max-w-xl">
+An IT professional specializing in IoT systems, network setup, and web development. Passionate about building smart solutions and automation systems.
+</p>
+</section>
+
+<!-- WORK -->
+<section id="work" class="section">
+<h2 class="text-3xl font-bold mb-10">Projects</h2>
+
+<div class="grid md:grid-cols-2 gap-6">
+
+<div class="card">
+<h3 class="font-semibold text-lg">IoT Server Room Monitoring</h3>
+<p class="text-gray-400 text-sm mt-2">
+Real-time temperature & humidity monitoring using ESP32, Blynk, and Google Sheets with automated fan control.
+</p>
+</div>
+
+<div class="card">
+<h3 class="font-semibold text-lg">SDN OMADA Network Setup</h3>
+<p class="text-gray-400 text-sm mt-2">
+Configured LAN/WAN, switches, and access points using centralized OMADA controller.
+</p>
+</div>
+
+<div class="card">
+<h3 class="font-semibold text-lg">Computer Shop & Pisowifi</h3>
+<p class="text-gray-400 text-sm mt-2">
+Built Pisonet and Pisowifi systems using VLAN and Raspberry Pi with automation features.
+</p>
+</div>
+
+<div class="card">
+<h3 class="font-semibold text-lg">Printing Business Website</h3>
+<p class="text-gray-400 text-sm mt-2">
+Created business website with portfolio, inquiry system, and chatbot integration.
+</p>
+</div>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+<h2 class="text-3xl font-bold mb-6">About Me</h2>
+<p class="text-gray-400 mb-6">
+IT professional experienced in system development, IoT, networking, and technical support. Also managing a digital printing business.
+</p>
+
+<div class="flex flex-wrap gap-3">
+<span class="skill">Web Development</span>
+<span class="skill">PHP & MySQL</span>
+<span class="skill">IoT (ESP32)</span>
+<span class="skill">Networking</span>
+<span class="skill">CCTV Installation</span>
+<span class="skill">Troubleshooting</span>
+<span class="skill">Graphic Design</span>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+<h2 class="text-3xl font-bold mb-4">Contact</h2>
+<p class="text-gray-400 mb-6">
+Open for IT projects, freelance work, and collaborations.
+</p>
+
+<a href="mailto:harveybalmes01@gmail.com"
+class="bg-lime-300 text-black px-6 py-3 rounded-full font-semibold">
+harveybalmes01@gmail.com
+</a>
+
+<p class="mt-6 text-gray-500 text-sm">
+📞 0927-631-6196 / 0991-397-8450<br>
+Batangas City, Philippines
+</p>
+</section>
+
+</body>
+</html>
